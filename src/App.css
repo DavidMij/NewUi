@@ -1,0 +1,234 @@
+:root {
+  /* --bgColor: #282c34; */
+  --txtColor: white;
+  --bgColor: rgb(26, 25, 25);
+  --logoColor: rgb(62, 126, 199);
+}
+
+#root {
+  text-align: center;
+  color: var(--logoColor);
+  background-color: var(--bgColor);
+  font-size: 1.5vw;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--bgColor);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  padding: 8% 12%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  color: var(--logoColor);
+  align-items: flex-start;
+  text-decoration: none;
+}
+
+.logo-title {
+  font-size: 7vw;
+}
+
+.logo-slogan {
+  font-size: 2.5vw;
+}
+
+.nav-btns {
+  display: flex;
+  flex-direction: row;
+  width: 35%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  width: 40%;
+  border: 2px solid var(--txtColor);
+  color: white;
+  text-align: center;
+  align-self: center;
+  padding: 3% 0;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.nav-btn:hover {
+  color: var(--bgColor);
+  background-color: var(--txtColor);
+}
+
+.home {
+  color: var(--logoColor)
+}
+
+.home .title {
+  font-size: 2vw;
+}
+
+.home .home-items {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  justify-content: space-around;
+}
+
+.home .home-items .item {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home .home-items .item .home-img {
+  border-radius: 30px;
+  height: 60%;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
+  margin-bottom: 15px;
+}
+
+.home .home-items .item .description {
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 10px;
+}
+
+input {
+  background-color: #605f5f;
+  border-radius: 7px;
+  height: 25px;
+  border: 1px solid white;
+  color: white;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.search .title {
+  margin: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  border: none;
+}
+
+.search .form .field {
+  /* align-items:flex-start; */
+  display: flex;
+  width: 30%;
+  justify-content: flex-start;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.search .form .field-big {
+  width: 60%;
+
+}
+
+.search .form .dates-label {
+  width: 330px;
+  text-align: left;
+}
+
+.submitBtn {
+  background-color: var(--bgColor);
+  margin: 55px;
+  width: 10% !important;
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+.siteBtn {
+  width: 40%;
+  border: 2px solid var(--txtColor);
+  color: white;
+  text-align: center;
+  align-self: center;
+  padding: 15px;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+
+
+.sign .form,
+.list .form {
+  flex-direction: column;
+  width: 25%;
+}
+
+.sign .field,
+.list .field {
+  margin: 15px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.list .dates-label {
+  width: 100%;
+}
+
+.date-field {
+
+  text-align: right;
+  display: flex;
+  justify-content: inherit;
+  width: 100%;
+  margin: 10px 0px;
+}
